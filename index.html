@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robocraft Club — Build. Code. Lead. | Accra's Premier Tech Club for Kids</title>
+  <meta name="description" content="Transform your child's screen time into skill time. Robocraft Club offers hands-on robotics, 3D design, and coding bootcamps for kids ages 7–15 in Mataheko, Accra." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Space+Mono:wght@400;700&family=Sora:wght@300;400;500;600&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a id="whatsapp-fab" href="https://wa.me/233540782754" target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="16" cy="16" r="16" fill="#25D366"/>
+      <path d="M22.5 9.5A8.9 8.9 0 0 0 16 7a8.96 8.96 0 0 0-7.76 13.44L7 25l4.68-1.22A8.95 8.95 0 0 0 16 24.99a8.99 8.99 0 0 0 6.5-15.49ZM16 23.4a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.78.73.74-2.72-.18-.28A7.42 7.42 0 1 1 16 23.4Zm4.07-5.55c-.22-.11-1.31-.65-1.51-.72-.2-.08-.35-.11-.5.11-.15.22-.58.72-.71.87-.13.15-.26.17-.48.06-.22-.11-.94-.35-1.79-1.11-.66-.59-1.11-1.32-1.24-1.54-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.08-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.78.76-.78 1.86s.8 2.16.91 2.31c.11.15 1.58 2.41 3.83 3.38.54.23.96.37 1.28.47.54.17 1.03.15 1.42.09.43-.07 1.31-.54 1.5-1.06.18-.52.18-.97.13-1.06-.06-.09-.2-.15-.43-.26Z" fill="white"/>
+    </svg>
+  </a>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="Robocraft LOGO -WHITE.png" alt="Robocraft Club Logo" class="logo-white" />
+        <img src="Robocraft LOGO - DARK.png" alt="Robocraft Club Logo" class="logo-dark" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+      <a href="#register" class="btn btn-yellow nav-cta">Join Bootcamp 🚀</a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#programs">Programs</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#register">Register</a>
+      <a href="#register" class="btn btn-yellow">Join Bootcamp 🚀</a>
+    </div>
+  </nav>
+
+  <!-- ===== SECTION 1: HERO (DARK) ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <!-- Doodle shapes -->
+      <svg class="doodle doodle-star" viewBox="0 0 60 60"><polygon points="30,2 36,22 58,22 40,34 46,56 30,42 14,56 20,34 2,22 24,22" fill="rgba(255,209,21,0.3)"/></svg>
+      <svg class="doodle doodle-circle" viewBox="0 0 60 60"><circle cx="30" cy="30" r="26" fill="none" stroke="rgba(56,224,242,0.3)" stroke-width="3" stroke-dasharray="8,6"/></svg>
+      <svg class="doodle doodle-zigzag" viewBox="0 0 120 40"><polyline points="0,35 15,5 30,35 45,5 60,35 75,5 90,35 105,5 120,35" fill="none" stroke="rgba(11,217,158,0.25)" stroke-width="3"/></svg>
+      <svg class="doodle doodle-spiral" viewBox="0 0 60 60"><path d="M30,30 C30,20 40,20 40,30 C40,42 18,42 18,28 C18,14 44,14 44,30" fill="none" stroke="rgba(242,82,82,0.2)" stroke-width="2.5"/></svg>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+    </div>
+
+    <div class="hero-inner container">
+      <div class="hero-copy reveal">
+        <span class="hero-tag">🤖 ACCRA'S PREMIER TECH CLUB FOR KIDS</span>
+        <h1 class="hero-headline">Turn Screen Time<br/>Into <span class="highlight">Skill Time.</span></h1>
+        <p class="hero-sub">Equip your child with hands-on robotics, 3D design, and coding skills that foster creative problem-solving and a future-ready mindset.</p>
+        <div class="hero-actions">
+          <a href="#register" class="btn btn-yellow btn-3d btn-arrow" id="hero-cta">
+            Register For June Bootcamp
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <div class="hero-trust">
+            <span class="trust-dot"></span>
+            <span>500+ families enrolled</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap reveal reveal-right">
+        <div class="hero-glow"></div>
+        <img src="heroImage.png" alt="Robocraft students with robotics components" class="hero-img floating" id="hero-img" />
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: SOCIAL PROOF MARQUEE ===== -->
+  <section id="marquee-bar">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span class="marquee-item"><span class="micon">🤖</span> Trusted by 500+ Parents</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🎯</span> Ages 7 – 15</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">⚡</span> Hands-On Arduino</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🖨️</span> 3D Printing</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🧠</span> Creative Problem Solving</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🏆</span> Certified Graduates</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🔧</span> Real Robotics Builds</span>
+        <span class="marquee-sep">✦</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="marquee-item"><span class="micon">🤖</span> Trusted by 500+ Parents</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🎯</span> Ages 7 – 15</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">⚡</span> Hands-On Arduino</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🖨️</span> 3D Printing</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🧠</span> Creative Problem Solving</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🏆</span> Certified Graduates</span>
+        <span class="marquee-sep">✦</span>
+        <span class="marquee-item"><span class="micon">🔧</span> Real Robotics Builds</span>
+        <span class="marquee-sep">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: PROBLEM VS SOLUTION (LIGHT) ===== -->
+  <section id="problem">
+    <div class="section-doodles">
+      <svg class="sec-doodle sd-dots" viewBox="0 0 80 80"><circle cx="10" cy="10" r="4" fill="#FFD115" opacity="0.5"/><circle cx="40" cy="10" r="4" fill="#38E0F2" opacity="0.5"/><circle cx="70" cy="10" r="4" fill="#F25252" opacity="0.5"/><circle cx="10" cy="40" r="4" fill="#0BD99E" opacity="0.5"/><circle cx="40" cy="40" r="4" fill="#FFD115" opacity="0.5"/><circle cx="70" cy="40" r="4" fill="#3098D9" opacity="0.5"/></svg>
+    </div>
+    <div class="container">
+      <div class="section-label reveal">🤔 The Problem</div>
+      <h2 class="section-headline reveal">Is your child just <em>consuming</em> technology,<br/>or <strong>creating</strong> it?</h2>
+      
+      <div class="problem-children-img reveal" style="text-align: center; margin: 2rem 0 3rem;">
+        <img src="CHILDREN%20BUILDING%20ROBOT.png" alt="Children Building Robot" class="card-3d" style="max-width: 100%; height: auto; border-radius: var(--radius-lg); width: 600px; display: inline-block;" />
+      </div>
+
+      <div class="pvs-grid reveal">
+        <!-- Problem side -->
+        <div class="pvs-card pvs-problem card-3d">
+          <div class="pvs-icon-wrap dim">
+            <span class="pvs-big-icon">📱</span>
+          </div>
+          <h3>Passive Consumer</h3>
+          <ul class="pvs-list">
+            <li>Hours of scrolling &amp; gaming</li>
+            <li>No transferable skills</li>
+            <li>Anxiety about the future</li>
+            <li>Technology controls them</li>
+          </ul>
+        </div>
+
+        <!-- VS divider -->
+        <div class="pvs-vs">
+          <div class="vs-circle">VS</div>
+          <div class="vs-line"></div>
+        </div>
+
+        <!-- Solution side -->
+        <div class="pvs-card pvs-solution card-3d">
+          <div class="pvs-icon-wrap bright">
+            <span class="pvs-big-icon">⚙️</span>
+            <span class="pvs-float-icon" style="top:-10px;right:10px;font-size:1.2rem;">🖨️</span>
+            <span class="pvs-float-icon" style="bottom:-8px;left:5px;font-size:1rem;">&lt;/&gt;</span>
+          </div>
+          <h3>Active Creator</h3>
+          <ul class="pvs-list green">
+            <li>Builds real robots &amp; devices</li>
+            <li>Learns 21st-century skills</li>
+            <li>Gains confidence &amp; certifications</li>
+            <li>They control technology</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Floating Robo 2 pointing to this section -->
+    <img src="Robo 2.png" alt="Robot on rocket" class="section-robo section-robo-right floating" />
+  </section>
+
+  <!-- ===== SECTION 4: INTERACTIVE ROBOT (LIGHT) ===== -->
+  <section id="meet-robo">
+    <div class="container meet-robo-inner">
+      <div class="meet-robo-text reveal">
+        <div class="section-label">👋 Meet Our Mascot</div>
+        <h2 class="section-headline">Say Hi to <span class="text-gradient">RoboCraft Bot!</span></h2>
+        <p class="section-sub-light">Move your mouse around and watch our friendly robot follow you! This is the kind of interactive, fun learning experience your child will have at Robocraft Club.</p>
+        <a href="#register" class="btn btn-yellow btn-3d">Start Your Journey 🚀</a>
+      </div>
+      <div class="meet-robo-img-wrap reveal reveal-right">
+        <div class="robo-interactive-zone" id="robo-interactive-zone">
+          <img src="Master%20Robo.png" alt="Interactive robot mascot" class="robo-interactive" id="robo-interactive" />
+          <div class="robo-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: CURRICULUM CARDS (LIGHT) ===== -->
+  <section id="programs">
+    <div class="container">
+      <div class="section-label reveal">🎓 Kids Robotics Bootcamp</div>
+      <h2 class="section-headline reveal">The Ultimate <span class="text-gradient">3-in-1</span> Tech Package</h2>
+      <p class="section-sub-light reveal">Three hands-on modules combined into one complete bootcamp experience. Designed to take your child from curious beginner to confident creator.</p>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="program-card card-3d" id="card-3d">
+          <div class="card-glow cyan"></div>
+          <div class="card-icon-wrap">
+            <div class="card-icon">🖨️</div>
+            <div class="card-icon-bg"></div>
+          </div>
+          <span class="card-tag">Module 01</span>
+          <h3 class="card-title">3D Printing &amp; Design</h3>
+          <p class="card-desc">Learn to design and print real 3D objects. From concept sketches to physical models — your child will create things that exist in the real world.</p>
+          <ul class="card-skills">
+            <li>CAD Fundamentals</li>
+            <li>3D Modelling</li>
+            <li>Print Finishing</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 (featured) -->
+        <div class="program-card featured card-3d" id="card-arduino">
+          <div class="card-badge">⭐ Most Popular</div>
+          <div class="card-glow gold"></div>
+          <div class="card-icon-wrap">
+            <div class="card-icon">⚡</div>
+            <div class="card-icon-bg"></div>
+          </div>
+          <span class="card-tag">Module 02</span>
+          <h3 class="card-title">Arduino Coding</h3>
+          <p class="card-desc">Write real code that controls lights, sensors, and motors. The best introduction to programming through physical, tangible projects.</p>
+          <ul class="card-skills">
+            <li>C++ Basics</li>
+            <li>Sensor &amp; LED Control</li>
+            <li>Mini Projects</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="program-card card-3d" id="card-robotics">
+          <div class="card-glow green"></div>
+          <div class="card-icon-wrap">
+            <div class="card-icon">🤖</div>
+            <div class="card-icon-bg"></div>
+          </div>
+          <span class="card-tag">Module 03</span>
+          <h3 class="card-title">Robotics Engineering</h3>
+          <p class="card-desc">Build, program, and compete with real robots. The ultimate STEM experience that combines mechanical design, electronics, and software.</p>
+          <ul class="card-skills">
+            <li>Robot Assembly</li>
+            <li>Motor Control</li>
+            <li>Autonomous Navigation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Unified Package Pricing Banner -->
+      <div class="package-banner card-3d reveal">
+        <div class="pkg-info">
+          <h3>Kids Robotics Bootcamp</h3>
+          <p>Get all 3 modules in one comprehensive training package.</p>
+        </div>
+        <div class="pkg-price-action">
+          <div class="pkg-price">500 GHC</div>
+          <a href="#register" class="btn btn-yellow btn-3d pulse">Enroll Now 🚀</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ONGOING REGISTRATION BANNER ===== -->
+  <section id="ongoing-registration">
+    <div class="container reg-banner-inner">
+      <div class="reg-banner-image card-3d reveal">
+        <img src="TRAINING FLYER.png" alt="Ongoing Training Registration Flyer" />
+      </div>
+      <div class="reg-banner-content reveal reveal-right">
+        <div class="section-label">🔥 Hot Right Now</div>
+        <h2 class="section-headline">Training Registration is <span class="text-gradient">Ongoing!</span></h2>
+        <p class="section-sub-light">Don't let your child miss out on the ultimate tech bootcamp. Seats are filling up fast for our upcoming cohort. Equip them with hands-on skills in Robotics, Arduino Coding, and 3D Design today!</p>
+        <a href="https://forms.gle/paPJJ5HrcGZ2cvXk9" target="_blank" rel="noopener noreferrer" class="btn btn-yellow btn-3d pulse">
+          Register Here Now 🚀
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: WHAT THEY'RE BUILDING (LIGHT) ===== -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-label reveal">📸 Visual Proof</div>
+      <h2 class="section-headline reveal">What They're Building</h2>
+      <p class="section-sub-light reveal">Real kids. Real projects. Real pride.</p>
+      <div class="gallery-grid reveal">
+        <div class="polaroid card-3d tilt-left">
+          <img src="UNO%20board.jpg" alt="UNO board" />
+          <span class="polaroid-caption">Learning Arduino ⚡</span>
+        </div>
+        <div class="polaroid card-3d tilt-right">
+          <img src="electronic%20board.jpg" alt="Electronic board" />
+          <span class="polaroid-caption">Circuit Magic ✨</span>
+        </div>
+        <div class="polaroid card-3d tilt-left small">
+          <img src="creating%20electronic%20board.jpg" alt="Creating electronic board" />
+          <span class="polaroid-caption">Hands-on Wiring 🔌</span>
+        </div>
+        <div class="polaroid card-3d tilt-right tall">
+          <img src="Built%20robo%20car.jpg" alt="Built robo car" />
+          <span class="polaroid-caption">The Finished Car 🚗</span>
+        </div>
+        <div class="polaroid card-3d tilt-left">
+          <video autoplay loop muted playsinline src="moving%20robo%20car.mp4" style="width: 100%; border-radius: 4px; border: 2px solid var(--navy); object-fit: cover; aspect-ratio: 4/3;"></video>
+          <span class="polaroid-caption">It Moves! 🚀</span>
+        </div>
+        <div class="polaroid card-3d tilt-right">
+          <img src="robot%20operating%20a%20hollographic%20screen.png" alt="Holographic interface" />
+          <span class="polaroid-caption">Future tech, today ✨</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: REGISTER + FAQ (LIGHT) ===== -->
+  <section id="register">
+    <div class="register-bg">
+      <div class="geo-blob blob-yellow" style="top:10%;left:5%;"></div>
+      <div class="geo-blob blob-blue" style="top:30%;right:8%;"></div>
+      <div class="geo-blob blob-green" style="bottom:20%;left:15%;"></div>
+      <div class="geo-blob blob-pink" style="bottom:10%;right:20%;"></div>
+    </div>
+    <div class="container register-inner">
+
+      <!-- Left: FAQ -->
+      <div class="faq-col reveal">
+        <div class="section-label">❓ Questions?</div>
+        <h2 class="section-headline">We've Got Answers</h2>
+        <div class="accordion" id="faq">
+          <div class="acc-item card-3d open">
+            <button class="acc-trigger" aria-expanded="true">
+              Does my kid need prior experience?
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>Not at all! We start from absolute scratch. Our instructors are trained to make every concept fun and accessible — even for complete beginners.</p>
+            </div>
+          </div>
+          <div class="acc-item card-3d">
+            <button class="acc-trigger" aria-expanded="false">
+              Do I need to bring a laptop?
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>No. We provide all equipment — laptops, Arduino kits, 3D printers, and robot components. Just bring your child and their curiosity!</p>
+            </div>
+          </div>
+          <div class="acc-item card-3d">
+            <button class="acc-trigger" aria-expanded="false">
+              What is the schedule?
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>Classes run Monday – Friday, 9am – 1pm. The June cohort runs from <strong>June 15th to July 10th</strong> at our Mataheko, Accra facility.</p>
+            </div>
+          </div>
+          <div class="acc-item card-3d">
+            <button class="acc-trigger" aria-expanded="false">
+              What do kids take home?
+              <span class="acc-icon">+</span>
+            </button>
+            <div class="acc-body">
+              <p>A certificate of completion, a portfolio of projects they built, and the confidence of a young creator. Some programs include physical take-home projects!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Offer card + form -->
+      <div class="offer-col reveal reveal-right">
+        <div class="cohort-card card-3d">
+          <div class="cohort-badge">🔥 Limited Seats</div>
+          <div class="cohort-details">
+            <div class="cohort-detail"><span class="cd-icon">📅</span><span><strong>June 15 – July 10</strong><br/><small>4-Week Intensive</small></span></div>
+            <div class="cohort-detail"><span class="cd-icon">📍</span><span><strong>Mataheko, Accra</strong><br/><small>Ghana</small></span></div>
+            <div class="cohort-detail"><span class="cd-icon">💰</span><span><strong>500 GHC</strong><br/><small>All materials included</small></span></div>
+          </div>
+
+          <!-- Registration Form -->
+          <form class="reg-form" id="reg-form" novalidate>
+            <h3>Secure Your Child's Spot 🎯</h3>
+            <div class="form-group">
+              <label for="parent-name">Parent / Guardian Name</label>
+              <input type="text" id="parent-name" name="parent-name" placeholder="e.g. Ama Mensah" required />
+            </div>
+            <div class="form-group">
+              <label for="kid-age">Child's Age</label>
+              <select id="kid-age" name="kid-age" required>
+                <option value="" disabled selected>Select age</option>
+                <option value="7">7 years</option>
+                <option value="8">8 years</option>
+                <option value="9">9 years</option>
+                <option value="10">10 years</option>
+                <option value="11">11 years</option>
+                <option value="12">12 years</option>
+                <option value="13">13 years</option>
+                <option value="14">14 years</option>
+                <option value="15">15 years</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="program">Package</label>
+              <select id="program" name="program" required>
+                <option value="kids-bootcamp" selected>Kids Robotics Bootcamp (3-in-1)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-yellow btn-3d btn-full pulse" id="submit-btn">
+              Secure Your Child's Spot Now →
+            </button>
+            <p class="form-note">Or <a href="https://wa.me/233540782754" target="_blank">WhatsApp us at 054 078 2754</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: FOOTER (DARK) ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="Robocraft LOGO -WHITE.png" alt="Robocraft Club" class="footer-logo" />
+        <p class="footer-tagline">Future-Proofing Your Child.</p>
+        <p class="footer-location">📍 Mataheko, Accra, Ghana</p>
+        <a href="https://wa.me/233540782754" class="footer-wa">💬 054 078 2754</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Programs</h4>
+        <a href="#programs">3D Printing &amp; Design</a>
+        <a href="#programs">Arduino Coding</a>
+        <a href="#programs">Robotics Engineering</a>
+      </div>
+      <div class="footer-links-col">
+        <h4>Quick Links</h4>
+        <a href="#gallery">Gallery</a>
+        <a href="#register">Register</a>
+        <a href="https://wa.me/233540782754">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-mono">BUILD. CODE. LEAD.</span>
+      <span>© 2025 Robocraft Club. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- GSAP for premium animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="main.js" defer></script>
+</body>
+</html>
