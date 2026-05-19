@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Robocraft Club — Build. Code. Lead. | Accra's Premier Tech Club for Kids</title>
-  <meta name="description" content="Transform your child's screen time into skill time. Robocraft Club offers hands-on robotics, 3D design, and coding bootcamps for kids ages 7–15 in Mataheko, Accra." />
+  <meta name="description" content="Transform your child's screen time into skill time. Robocraft Club is Accra's premier tech club offering hands-on robotics, 3D design, coding, and more for kids ages 7–15 in Mataheko, Accra." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Space+Mono:wght@400;700&family=Sora:wght@300;400;500;600&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -25,10 +25,11 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="Robocraft LOGO -WHITE.png" alt="Robocraft Club Logo" class="logo-white" />
-        <img src="Robocraft LOGO - DARK.png" alt="Robocraft Club Logo" class="logo-dark" />
+        <img src="logo-white.png" alt="Robocraft Club Logo" class="logo-white" decoding="async" />
+        <img src="logo-dark.png" alt="Robocraft Club Logo" class="logo-dark" decoding="async" />
       </a>
       <ul class="nav-links">
+        <li><a href="#about">About</a></li>
         <li><a href="#programs">Programs</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#register">Register</a></li>
@@ -39,6 +40,7 @@
       </button>
     </div>
     <div class="nav-mobile" id="nav-mobile">
+      <a href="#about">About</a>
       <a href="#programs">Programs</a>
       <a href="#gallery">Gallery</a>
       <a href="#register">Register</a>
@@ -63,7 +65,7 @@
       <div class="hero-copy reveal">
         <span class="hero-tag">🤖 ACCRA'S PREMIER TECH CLUB FOR KIDS</span>
         <h1 class="hero-headline">Turn Screen Time<br/>Into <span class="highlight">Skill Time.</span></h1>
-        <p class="hero-sub">Equip your child with hands-on robotics, 3D design, and coding skills that foster creative problem-solving and a future-ready mindset.</p>
+        <p class="hero-sub">Robocraft Club is Accra's out-of-timetable STEM collective for kids aged 5–17. We give young innovators the space to build, code, and create — turning curious minds into confident engineers.</p>
         <div class="hero-actions">
           <a href="#register" class="btn btn-yellow btn-3d btn-arrow" id="hero-cta">
             Register For June Bootcamp
@@ -78,7 +80,7 @@
 
       <div class="hero-image-wrap reveal reveal-right">
         <div class="hero-glow"></div>
-        <img src="heroImage.png" alt="Robocraft students with robotics components" class="hero-img floating" id="hero-img" />
+        <img src="heroImage.jpg" alt="Robocraft students with robotics components" class="hero-img floating" id="hero-img" fetchpriority="high" decoding="async" />
       </div>
     </div>
 
@@ -125,6 +127,58 @@
     </div>
   </section>
 
+  <!-- ===== SECTION: ABOUT US + MISSION (DARK) ===== -->
+  <section id="about">
+    <div class="about-bg">
+      <div class="about-grid-overlay"></div>
+      <div class="about-blob ab-1"></div>
+      <div class="about-blob ab-2"></div>
+    </div>
+    <div class="container about-inner">
+      <div class="about-text reveal">
+        <div class="section-label section-label-light">🏫 Who We Are</div>
+        <h2 class="section-headline section-headline-light">Where <span class="highlight-cyan">Imagination</span> Meets Engineering</h2>
+        <p class="about-body">Welcome to Robocraft Club — an <strong>out-of-timetable STEM collective</strong> dedicated to giving young innovators the space to build, code, and create. By stepping outside the traditional classroom, our members explore the cutting edge of robotics and science in a hands-on, high-energy environment.</p>
+        <p class="about-body">At Robocraft, we don't just study the future — <em>we build, innovate, and explore it.</em></p>
+        <div class="about-mission-card">
+          <div class="mission-icon">🎯</div>
+          <div>
+            <h3>Our Mission</h3>
+            <p>We provide immersive lessons in Coding, Robotics, and Design for students aged <strong>5 to 17</strong>. We believe that within every child lies a genius waiting to be discovered. By providing the right atmosphere and technical expertise, we empower young minds to move from <em>consumers</em> of technology to <em>creators and inventors.</em></p>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="stat-num" data-count-to="17" data-prefix="5–" data-suffix="">5–17</span>
+            <span class="stat-label">Age Range</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num" data-count-to="3" data-suffix="">3</span>
+            <span class="stat-label">Learning Stages</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num" data-count-to="6" data-prefix="1–" data-suffix="">1–6</span>
+            <span class="stat-label">Years of Growth</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num" data-count-to="500" data-suffix="+">500+</span>
+            <span class="stat-label">Young Builders</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-img-wrap reveal reveal-right">
+        <div class="about-img-card card-3d-dark">
+          <img src="children-building.jpg" alt="Robocraft Club students building robots" loading="lazy" decoding="async" />
+          <div class="about-img-tag">🤖 Real kids. Real builds.</div>
+        </div>
+        <div class="about-float-badge">
+          <span class="float-badge-icon">✦</span>
+          <span>Build. Code. Lead.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== SECTION 3: PROBLEM VS SOLUTION (LIGHT) ===== -->
   <section id="problem">
     <div class="section-doodles">
@@ -135,7 +189,7 @@
       <h2 class="section-headline reveal">Is your child just <em>consuming</em> technology,<br/>or <strong>creating</strong> it?</h2>
       
       <div class="problem-children-img reveal" style="text-align: center; margin: 2rem 0 3rem;">
-        <img src="CHILDREN%20BUILDING%20ROBOT.png" alt="Children Building Robot" class="card-3d" style="max-width: 100%; height: auto; border-radius: var(--radius-lg); width: 600px; display: inline-block;" />
+        <img src="children-building.jpg" alt="Children Building Robot" class="card-3d" loading="lazy" decoding="async" style="max-width: 100%; height: auto; border-radius: var(--radius-lg); width: 600px; display: inline-block;" />
       </div>
 
       <div class="pvs-grid reveal">
@@ -177,7 +231,76 @@
       </div>
     </div>
     <!-- Floating Robo 2 pointing to this section -->
-    <img src="Robo 2.png" alt="Robot on rocket" class="section-robo section-robo-right floating" />
+    <img src="robo2.png" alt="Robot on rocket" class="section-robo section-robo-right floating" loading="lazy" decoding="async" />
+  </section>
+
+  <!-- ===== SECTION: OUR VALUES (LIGHT) ===== -->
+  <section id="values">
+    <div class="container">
+      <div class="section-label reveal">💡 What We Stand For</div>
+      <h2 class="section-headline reveal">Our <span class="text-gradient">Core Values</span></h2>
+      <p class="section-sub-light reveal">Every decision we make, every session we run, and every challenge we set is guided by four foundational principles.</p>
+      <div class="values-grid reveal">
+        <div class="value-card card-3d">
+          <div class="value-icon">🛤️</div>
+          <h3>Personalized Journeys</h3>
+          <p>Every young engineer is unique. Our self-paced environment ensures members master each milestone — from basic circuits to advanced logic — before moving to the next level.</p>
+        </div>
+        <div class="value-card card-3d">
+          <div class="value-icon">📈</div>
+          <h3>Long-Term Progression</h3>
+          <p>Our multi-year curriculum grows with our members. Students can engage for one to six years, building a sophisticated portfolio that evolves from simple builds to complex integrated systems.</p>
+        </div>
+        <div class="value-card card-3d">
+          <div class="value-icon">🔧</div>
+          <h3>Project-First Learning</h3>
+          <p>Engineering is best learned with a screwdriver and code in hand. We introduce concepts only as tools to solve real challenges — students observe, then build their own creative inventions.</p>
+        </div>
+        <div class="value-card card-3d">
+          <div class="value-icon">🎓</div>
+          <h3>Expert Mentorship</h3>
+          <p>Our lab is led by CS and Engineering graduates from the nation's top universities — bringing real-world expertise and a passion for innovation to every single session.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: WATCH, WORK, WIN (DARK) ===== -->
+  <section id="principle">
+    <div class="principle-bg">
+      <div class="principle-blob pb-1"></div>
+      <div class="principle-blob pb-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-label section-label-light reveal">⚡ Our Principle</div>
+      <h2 class="section-headline section-headline-light reveal">Watch. Work. <span class="highlight-yellow">Win.</span></h2>
+      <p class="section-sub-dark reveal">Every session at Robocraft follows our proven 3-step methodology designed to build real confidence, not just knowledge.</p>
+      <div class="principle-steps reveal">
+        <div class="principle-step">
+          <div class="step-num">01</div>
+          <div class="step-icon">👁️</div>
+          <div class="step-badge">I DO</div>
+          <h3>Watch</h3>
+          <p>See the tech in action as our expert instructors demonstrate exactly how it's done. Every technique made clear, every concept made visible.</p>
+        </div>
+        <div class="step-connector"><svg viewBox="0 0 60 20" fill="none"><path d="M0 10 Q30 0 60 10" stroke="rgba(255,209,21,0.4)" stroke-width="2" stroke-dasharray="5,4"/></svg></div>
+        <div class="principle-step">
+          <div class="step-num">02</div>
+          <div class="step-icon">🤝</div>
+          <div class="step-badge">WE DO</div>
+          <h3>Work</h3>
+          <p>Get your hands dirty! We build and code together as a team. Guided practice, real components, and real code — together we bring the robot to life.</p>
+        </div>
+        <div class="step-connector"><svg viewBox="0 0 60 20" fill="none"><path d="M0 10 Q30 0 60 10" stroke="rgba(255,209,21,0.4)" stroke-width="2" stroke-dasharray="5,4"/></svg></div>
+        <div class="principle-step">
+          <div class="step-num">03</div>
+          <div class="step-icon">🏆</div>
+          <div class="step-badge">YOU DO</div>
+          <h3>Win</h3>
+          <p>Take the controls. You build the robot — we're just here to back you up. True ownership of your creation is how confidence becomes permanent.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ===== SECTION 4: INTERACTIVE ROBOT (LIGHT) ===== -->
@@ -191,84 +314,80 @@
       </div>
       <div class="meet-robo-img-wrap reveal reveal-right">
         <div class="robo-interactive-zone" id="robo-interactive-zone">
-          <img src="Master%20Robo.png" alt="Interactive robot mascot" class="robo-interactive" id="robo-interactive" />
+          <img src="master-robo.png" alt="Interactive robot mascot" class="robo-interactive" id="robo-interactive" loading="lazy" decoding="async" />
           <div class="robo-shadow"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SECTION 5: CURRICULUM CARDS (LIGHT) ===== -->
+  <!-- ===== SECTION 5: LEARNING STAGES (LIGHT) ===== -->
   <section id="programs">
     <div class="container">
-      <div class="section-label reveal">🎓 Kids Robotics Bootcamp</div>
-      <h2 class="section-headline reveal">The Ultimate <span class="text-gradient">3-in-1</span> Tech Package</h2>
-      <p class="section-sub-light reveal">Three hands-on modules combined into one complete bootcamp experience. Designed to take your child from curious beginner to confident creator.</p>
+      <div class="section-label reveal">🎓 Curriculum</div>
+      <h2 class="section-headline reveal">Three <span class="text-gradient">Stages</span> of Mastery</h2>
+      <p class="section-sub-light reveal">Whether your child is 5 or 17, there's a stage built for them. Every member starts at the right level and grows at their own pace — from block coding to building fully wireless, custom-engineered robots.</p>
 
       <div class="cards-grid">
-        <!-- Card 1 -->
-        <div class="program-card card-3d" id="card-3d">
+        <!-- Stage 1 -->
+        <div class="program-card card-3d" id="card-stage1">
           <div class="card-glow cyan"></div>
           <div class="card-icon-wrap">
-            <div class="card-icon">🖨️</div>
-            <div class="card-icon-bg"></div>
+            <div class="card-icon">🔍</div>
           </div>
-          <span class="card-tag">Module 01</span>
-          <h3 class="card-title">3D Printing &amp; Design</h3>
-          <p class="card-desc">Learn to design and print real 3D objects. From concept sketches to physical models — your child will create things that exist in the real world.</p>
+          <span class="card-tag">Stage 01 · Ages 5–9</span>
+          <h3 class="card-title">Discovery &amp; Block Coding</h3>
+          <p class="card-desc">Students learn the core logic of programming without typing syntax. They explore the Arduino microcontroller using drag-and-drop code blocks to bring LEDs, buttons, and buzzers to life.</p>
           <ul class="card-skills">
-            <li>CAD Fundamentals</li>
-            <li>3D Modelling</li>
-            <li>Print Finishing</li>
+            <li>Visual Programming</li>
+            <li>Basic Electronics</li>
+            <li>Loops &amp; Logic</li>
+            <li>Voltage &amp; Current Basics</li>
           </ul>
+          <div class="card-focus-tag">⚡ Focus: Foundations</div>
         </div>
 
-        <!-- Card 2 (featured) -->
-        <div class="program-card featured card-3d" id="card-arduino">
-          <div class="card-badge">⭐ Most Popular</div>
+        <!-- Stage 2 (featured) -->
+        <div class="program-card featured card-3d" id="card-stage2">
+          <div class="card-badge">🚀 Most Active</div>
           <div class="card-glow gold"></div>
           <div class="card-icon-wrap">
-            <div class="card-icon">⚡</div>
-            <div class="card-icon-bg"></div>
+            <div class="card-icon">🤖</div>
           </div>
-          <span class="card-tag">Module 02</span>
-          <h3 class="card-title">Arduino Coding</h3>
-          <p class="card-desc">Write real code that controls lights, sensors, and motors. The best introduction to programming through physical, tangible projects.</p>
+          <span class="card-tag">Stage 02 · Ages 10–13</span>
+          <h3 class="card-title">Exploration &amp; Text-Based Logic</h3>
+          <p class="card-desc">Students graduate to writing real C/C++ code in the Arduino IDE. They build and wire autonomous robotic rovers, interface DC motors, and integrate environmental sensors to make robots navigate independently.</p>
           <ul class="card-skills">
-            <li>C++ Basics</li>
-            <li>Sensor &amp; LED Control</li>
-            <li>Mini Projects</li>
+            <li>Arduino C/C++ Syntax</li>
+            <li>Circuit Breadboarding</li>
+            <li>Motor Drivers</li>
+            <li>Sensor Calibration</li>
           </ul>
+          <div class="card-focus-tag">⚡ Focus: Autonomous Robots</div>
         </div>
 
-        <!-- Card 3 -->
-        <div class="program-card card-3d" id="card-robotics">
+        <!-- Stage 3 -->
+        <div class="program-card card-3d" id="card-stage3">
           <div class="card-glow green"></div>
           <div class="card-icon-wrap">
-            <div class="card-icon">🤖</div>
-            <div class="card-icon-bg"></div>
+            <div class="card-icon">⚙️</div>
           </div>
-          <span class="card-tag">Module 03</span>
-          <h3 class="card-title">Robotics Engineering</h3>
-          <p class="card-desc">Build, program, and compete with real robots. The ultimate STEM experience that combines mechanical design, electronics, and software.</p>
+          <span class="card-tag">Stage 03 · Ages 14–17</span>
+          <h3 class="card-title">Innovation &amp; Systems Engineering</h3>
+          <p class="card-desc">Aspiring engineers move past pre-made kits to build fully custom, interconnected systems — wireless robotic arms, IoT devices, and 3D-printed components they designed themselves.</p>
           <ul class="card-skills">
-            <li>Robot Assembly</li>
-            <li>Motor Control</li>
-            <li>Autonomous Navigation</li>
+            <li>Wireless IoT</li>
+            <li>CAD &amp; 3D Printing</li>
+            <li>Multi-Servo Coordination</li>
+            <li>Bluetooth / Wi-Fi Control</li>
           </ul>
+          <div class="card-focus-tag">⚡ Focus: Advanced Mechatronics</div>
         </div>
       </div>
 
-      <!-- Unified Package Pricing Banner -->
-      <div class="package-banner card-3d reveal">
-        <div class="pkg-info">
-          <h3>Kids Robotics Bootcamp</h3>
-          <p>Get all 3 modules in one comprehensive training package.</p>
-        </div>
-        <div class="pkg-price-action">
-          <div class="pkg-price">500 GHC</div>
-          <a href="#register" class="btn btn-yellow btn-3d pulse">Enroll Now 🚀</a>
-        </div>
+      <!-- CTA nudge below cards -->
+      <div class="cards-cta-nudge reveal">
+        <p>Ready to find your child's stage? <a href="#register" class="cards-cta-link">Enroll them today →</a></p>
       </div>
 
     </div>
@@ -278,12 +397,12 @@
   <section id="ongoing-registration">
     <div class="container reg-banner-inner">
       <div class="reg-banner-image card-3d reveal">
-        <img src="TRAINING FLYER.png" alt="Ongoing Training Registration Flyer" />
+        <img src="training-flyer.jpg" alt="Robocraft Club Training Flyer" loading="lazy" decoding="async" />
       </div>
       <div class="reg-banner-content reveal reveal-right">
-        <div class="section-label">🔥 Hot Right Now</div>
-        <h2 class="section-headline">Training Registration is <span class="text-gradient">Ongoing!</span></h2>
-        <p class="section-sub-light">Don't let your child miss out on the ultimate tech bootcamp. Seats are filling up fast for our upcoming cohort. Equip them with hands-on skills in Robotics, Arduino Coding, and 3D Design today!</p>
+        <div class="section-label">🔥 Now Enrolling</div>
+        <h2 class="section-headline">Registration is <span class="text-gradient">Open!</span></h2>
+        <p class="section-sub-light">Don't let your child miss out. Seats are filling up fast. Equip them with hands-on skills in Robotics, Arduino Coding, and 3D Design at Robocraft Club — Accra's home for young innovators.</p>
         <a href="https://forms.gle/paPJJ5HrcGZ2cvXk9" target="_blank" rel="noopener noreferrer" class="btn btn-yellow btn-3d pulse">
           Register Here Now 🚀
         </a>
@@ -299,19 +418,19 @@
       <p class="section-sub-light reveal">Real kids. Real projects. Real pride.</p>
       <div class="gallery-grid reveal">
         <div class="polaroid card-3d tilt-left">
-          <img src="UNO%20board.jpg" alt="UNO board" />
+          <img src="UNO%20board.jpg" alt="UNO board" loading="lazy" decoding="async" />
           <span class="polaroid-caption">Learning Arduino ⚡</span>
         </div>
         <div class="polaroid card-3d tilt-right">
-          <img src="electronic%20board.jpg" alt="Electronic board" />
+          <img src="electronic%20board.jpg" alt="Electronic board" loading="lazy" decoding="async" />
           <span class="polaroid-caption">Circuit Magic ✨</span>
         </div>
         <div class="polaroid card-3d tilt-left small">
-          <img src="creating%20electronic%20board.jpg" alt="Creating electronic board" />
+          <img src="creating%20electronic%20board.jpg" alt="Creating electronic board" loading="lazy" decoding="async" />
           <span class="polaroid-caption">Hands-on Wiring 🔌</span>
         </div>
         <div class="polaroid card-3d tilt-right tall">
-          <img src="Built%20robo%20car.jpg" alt="Built robo car" />
+          <img src="Built%20robo%20car.jpg" alt="Built robo car" loading="lazy" decoding="async" />
           <span class="polaroid-caption">The Finished Car 🚗</span>
         </div>
         <div class="polaroid card-3d tilt-left">
@@ -319,7 +438,7 @@
           <span class="polaroid-caption">It Moves! 🚀</span>
         </div>
         <div class="polaroid card-3d tilt-right">
-          <img src="robot%20operating%20a%20hollographic%20screen.png" alt="Holographic interface" />
+          <img src="robot-holo.jpg" alt="Holographic interface" loading="lazy" decoding="async" />
           <span class="polaroid-caption">Future tech, today ✨</span>
         </div>
       </div>
@@ -393,30 +512,48 @@
           <!-- Registration Form -->
           <form class="reg-form" id="reg-form" novalidate>
             <h3>Secure Your Child's Spot 🎯</h3>
-            <div class="form-group">
-              <label for="parent-name">Parent / Guardian Name</label>
-              <input type="text" id="parent-name" name="parent-name" placeholder="e.g. Ama Mensah" required />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parent-name">Parent / Guardian Name</label>
+                <input type="text" id="parent-name" name="parent-name" placeholder="e.g. Ama Mensah" required />
+              </div>
+              <div class="form-group">
+                <label for="child-name">Child's Name</label>
+                <input type="text" id="child-name" name="child-name" placeholder="e.g. Kwame Mensah" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="kid-age">Child's Age</label>
+                <select id="kid-age" name="kid-age" required>
+                  <option value="" disabled selected>Select age</option>
+                  <option value="5">5 years</option>
+                  <option value="6">6 years</option>
+                  <option value="7">7 years</option>
+                  <option value="8">8 years</option>
+                  <option value="9">9 years</option>
+                  <option value="10">10 years</option>
+                  <option value="11">11 years</option>
+                  <option value="12">12 years</option>
+                  <option value="13">13 years</option>
+                  <option value="14">14 years</option>
+                  <option value="15">15 years</option>
+                  <option value="16">16 years</option>
+                  <option value="17">17 years</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="parent-number">Parent's Phone Number</label>
+                <input type="tel" id="parent-number" name="parent-number" placeholder="e.g. 054 078 2754" required />
+              </div>
             </div>
             <div class="form-group">
-              <label for="kid-age">Child's Age</label>
-              <select id="kid-age" name="kid-age" required>
-                <option value="" disabled selected>Select age</option>
-                <option value="7">7 years</option>
-                <option value="8">8 years</option>
-                <option value="9">9 years</option>
-                <option value="10">10 years</option>
-                <option value="11">11 years</option>
-                <option value="12">12 years</option>
-                <option value="13">13 years</option>
-                <option value="14">14 years</option>
-                <option value="15">15 years</option>
-              </select>
+              <label for="address">Address / Location</label>
+              <input type="text" id="address" name="address" placeholder="e.g. Lapaz, Accra" required />
             </div>
             <div class="form-group">
-              <label for="program">Package</label>
-              <select id="program" name="program" required>
-                <option value="kids-bootcamp" selected>Kids Robotics Bootcamp (3-in-1)</option>
-              </select>
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="e.g. ama@gmail.com" />
             </div>
             <button type="submit" class="btn btn-yellow btn-3d btn-full pulse" id="submit-btn">
               Secure Your Child's Spot Now →
@@ -432,7 +569,7 @@
   <footer id="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="Robocraft LOGO -WHITE.png" alt="Robocraft Club" class="footer-logo" />
+        <img src="logo-white.png" alt="Robocraft Club" class="footer-logo" loading="lazy" decoding="async" />
         <p class="footer-tagline">Future-Proofing Your Child.</p>
         <p class="footer-location">📍 Mataheko, Accra, Ghana</p>
         <a href="https://wa.me/233540782754" class="footer-wa">💬 054 078 2754</a>
