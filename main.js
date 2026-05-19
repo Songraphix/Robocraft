@@ -42,21 +42,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const staggerObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        // Find all stagger children within the same parent container
         const siblings = entry.target.parentElement.querySelectorAll(
           '.program-card, .value-card, .polaroid, .principle-step'
         );
         siblings.forEach((el, i) => {
-          setTimeout(() => el.classList.add('visible'), i * 120);
+          setTimeout(() => el.classList.add('visible'), i * 130);
         });
         staggerObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.08 });
 
-  document.querySelectorAll('.program-card, .value-card, .polaroid, .principle-step').forEach((el, i) => {
-    if (i === 0) staggerObserver.observe(el); // trigger on first child
-    el.classList.add('reveal');
+  // Observe the FIRST element of EACH group separately so every section triggers
+  ['.value-card', '.principle-step', '.program-card', '.polaroid'].forEach(selector => {
+    const all = document.querySelectorAll(selector);
+    all.forEach(el => el.classList.add('reveal')); // start hidden
+    const first = all[0];
+    if (first) staggerObserver.observe(first); // watch for the first to enter viewport
   });
+
 
   // ===== COUNTING ANIMATION =====
   function animateCount(el, from, to, suffix, prefix, duration) {
