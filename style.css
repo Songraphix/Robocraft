@@ -500,18 +500,11 @@ ul { list-style: none; }
 /* ===== SECTION 6: GALLERY (LIGHT) ===== */
 #gallery { padding: 8rem 0; background: #fffbee; position: relative; overflow: hidden; border-top: 4px dashed rgba(255,209,21,0.5); }
   .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; margin-top: 3rem; padding: 2rem 0; }
-  @keyframes polaroidFloat { 0%, 100% { translate: 0 0; } 50% { translate: 0 -12px; } }
-  .polaroid { background: var(--white); padding: 1rem 1rem 3.5rem; border: 4px solid var(--navy); box-shadow: 8px 8px 0 rgba(0,0,0,0.1); cursor: pointer; position: relative; animation: polaroidFloat 6s ease-in-out infinite; }
-  .polaroid:nth-child(even) { animation-delay: 1.5s; }
-  .polaroid:nth-child(3n) { animation-delay: 3s; }
-.polaroid::before { content: ''; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 40px; height: 15px; background: rgba(255,255,255,0.8); border: 2px solid #ccc; box-shadow: 1px 1px 3px rgba(0,0,0,0.1); z-index: 1; } /* Tape */
-.tilt-left { transform: rotate(-4deg); }
-.tilt-right { transform: rotate(4deg); }
-.polaroid:hover { transform: rotate(0deg) scale(1.05); box-shadow: 15px 15px 0 rgba(0,0,0,0.15); z-index: 10; }
-.polaroid img { width: 100%; border-radius: 4px; border: 2px solid var(--navy); object-fit: cover; aspect-ratio: 4/3; }
-.polaroid.tall img { aspect-ratio: 3/4; }
-.polaroid.small { transform: rotate(6deg) scale(0.9); }
-.polaroid-caption { display: block; text-align: center; font-family: 'Fredoka', cursive; font-size: 1.2rem; font-weight: 600; color: var(--navy); position: absolute; bottom: 1rem; width: calc(100% - 2rem); }
+  .polaroid { background: var(--white); padding: 1.2rem; border: 4px solid var(--navy); border-radius: var(--radius); box-shadow: 8px 8px 0 rgba(0,0,0,0.1); cursor: pointer; position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .polaroid:hover { transform: translateY(-6px); box-shadow: 12px 12px 0 rgba(0,0,0,0.15); z-index: 10; }
+  .polaroid img { width: 100%; border-radius: calc(var(--radius) - 8px); border: 2px solid var(--navy); object-fit: cover; aspect-ratio: 4/3; }
+  .polaroid.tall img { aspect-ratio: 3/4; }
+  .polaroid-caption { display: block; text-align: center; font-family: var(--font-head); font-size: 1.2rem; font-weight: 600; color: var(--navy); margin-top: 1rem; }
 
 /* ===== SECTION 7: REGISTER (LIGHT) ===== */
 #register { padding: 8rem 0; background: #F4F7FB; position: relative; overflow: hidden; }
